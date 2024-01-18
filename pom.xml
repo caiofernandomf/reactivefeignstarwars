@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.1.6</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.linuxtips</groupId>
+	<artifactId>reactivefeign-starwars</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>reactivefeign-starwars</name>
+	<description>Projeto com webflux e reactivefeign</description>
+	<properties>
+		<java.version>19</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webflux</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.playtika.reactivefeign/feign-reactor-spring-configuration -->
+		<dependency>
+			<groupId>com.playtika.reactivefeign</groupId>
+			<artifactId>feign-reactor-spring-configuration</artifactId>
+			<version>4.0.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.playtika.reactivefeign/feign-reactor-cloud -->
+		<dependency>
+			<groupId>com.playtika.reactivefeign</groupId>
+			<artifactId>feign-reactor-cloud</artifactId>
+			<version>4.0.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.playtika.reactivefeign/feign-reactor-webclient -->
+		<dependency>
+			<groupId>com.playtika.reactivefeign</groupId>
+			<artifactId>feign-reactor-webclient</artifactId>
+			<version>4.0.3</version>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+<!--				<configuration>-->
+<!--					<jvmArguments>-parameters</jvmArguments>-->
+<!--					<compilerArguments>-->
+<!--						<arg>-parameters</arg>-->
+<!--					</compilerArguments>-->
+<!--				</configuration>-->
+			</plugin>
+<!--			<plugin>-->
+<!--				<groupId>org.apache.maven.plugins</groupId>-->
+<!--				<artifactId>maven-compiler-plugin</artifactId>-->
+<!--				<configuration>-->
+<!--					<compilerArgs>-->
+<!--						<arg>-parameters</arg>-->
+<!--					</compilerArgs>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
+
+		</plugins>
+	</build>
+
+</project>
